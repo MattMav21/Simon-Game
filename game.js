@@ -39,7 +39,7 @@ $(`.btn`).on("click", function () {
         if (level == 2) {
             $("h1")[0].innerText = `GAME OVER! \n \n You completed 1 level. \n \n Press the spacebar to restart!`;
         } else {
-            $("h1")[0].innerText = `GAME OVER! You completed ${level-1} levels.`;
+            $("h1")[0].innerText = `GAME OVER! \n \n You completed ${level-1} levels. \n \n Press the spacebar to restart!`;
         }
 
         setTimeout(function() {
