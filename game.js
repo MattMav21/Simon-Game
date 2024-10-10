@@ -86,6 +86,22 @@ function animatePress(currentColor) {
     }, 100);
 };
 
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+    $(document).on("touchstart", function() {
+        if (gameOver) {
+            alert("GAME RESTARTED!");
+            restartGame();
+            nextSequence();
+            gameStarted = true;
+        };
+    
+        if (!gameStarted) {
+            nextSequence();
+            gameStarted = true;
+        };
+    });
+};
+
 $(document).on("keypress", function(event) {
     if (gameOver) {
         if (event.key == " ") {
