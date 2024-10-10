@@ -86,7 +86,7 @@ function animatePress(currentColor) {
     }, 100);
 };
 
-$(document).on("keydown", function(event) {
+$(document).on("keypress", function(event) {
     if (gameOver) {
         if (event.key == " ") {
             alert("GAME RESTARTED!");
