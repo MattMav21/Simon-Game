@@ -88,7 +88,6 @@ function animatePress(currentColor) {
 if (/Mobi|Android/i.test(navigator.userAgent)) {
     $(document).on("touchstart", function() {
         if (gameOver) {
-            alert("GAME RESTARTED!");
             restartGame();
             nextSequence();
             gameStarted = true;
