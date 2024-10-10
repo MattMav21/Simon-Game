@@ -36,7 +36,7 @@ $(`.btn`).on("click", function () {
         gameOver = true;
         counter = 0;
 
-        if (level = 2) {
+        if (level == 2) {
             $("h1")[0].innerText = `GAME OVER! \n \n You completed 1 level. \n \n Press the spacebar to restart!`;
         } else {
             $("h1")[0].innerText = `GAME OVER! You completed ${level-1} levels.`;
