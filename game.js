@@ -42,7 +42,6 @@ $(`.btn`).on("click", function () {
             $("h1")[0].innerText = `GAME OVER! You completed ${level-1} levels.`;
         }
 
-
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
