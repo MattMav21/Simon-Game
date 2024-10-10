@@ -93,6 +93,7 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
             restartGame();
             nextSequence();
             gameStarted = true;
+            gameOver = false;
         };
     
         if (!gameStarted) {
